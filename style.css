@@ -1,0 +1,102 @@
+
+/* PAGE */
+body{
+    margin: 20px;
+    background-color:#e8eef2 ;
+    line-height: 1.5;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
+
+/* HEADER AND SEARCH FORM */
+.gallary-header{
+    padding: 2rem 1.25rem 1.5rem;
+    text-align: center;
+}
+
+#search-status{
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+#search-button{
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border:2px solid black;
+    border-radius: 6px;
+    
+}
+
+
+#search-input{
+    flex: 1;
+    padding: 0.7rem 0.9rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    
+}
+
+/* GALLERY SECTION */
+
+.poster-fallback{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.show-card{
+    flex: 1 1 290px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.show-card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem 1.1rem 1.2rem;
+    font-size: 1.3rem;
+}
+
+/* CARD DETAILS */
+.show-card-body dl{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.2rem 0.75rem;
+    font-size: 0.92rem;
+}
+
+.show-card-body dt{
+    font-weight: 700;
+}
+
+.show-card-body a{
+    margin-top: auto;
+    color: #0b6b63;
+    font-weight: 700;
+}
+
+/* MEDIA QUERIES */ 
+@media (max-width: 480px){
+    #search-form div {
+        flex-direction: column;
+    }
+}
+
+
+
